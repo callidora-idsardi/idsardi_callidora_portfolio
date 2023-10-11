@@ -1,10 +1,39 @@
 @use 'fonts';
 
-// $primary-color: 
-// $secondary-color:
+
+
+
+// Brand Colours:
+// #5F96FE
+// #84AEFF
+// #C4DAF2
+// #FFCCFE
+// #734439
+
+//fonts: 
+// Heading Font
+// font-family: "ohno-blazeface", sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Body Font 
+// LIGHT:
+// font-family: "korolev", sans-serif;
+// font-weight: 300;
+// font-style: normal;
+
+// BOLD:
+// font-family: "korolev", sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+
+
+$primary-color: #5F96FE;
+$secondary-color: #FFAAF5;
 // $accent-color: 
 // $body-text-color: 
-// $heading-font-family: 
-// $body-font-family: 
+$heading-font-family: "ohno-blazeface", sans-serif;
+$body-font-family: "korolev", sans-serif;
 // $base-font-size: 
 // $base-font-weight: 
