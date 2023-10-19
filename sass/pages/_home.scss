@@ -1,0 +1,38 @@
+@use '../abstracts' as a;
+
+
+
+// General 
+.mobile-hidden {
+    display: none;
+}
+
+
+// Hero Con 
+
+#flower-con {
+    @include a.flex-center;
+}
+
+
+
+// Tablet Queries
+
+@media screen and (min-width: 768px) {
+
+    .mobile-hidden {
+        display: block;
+    }
+
+    .tablet-hidden {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+}
