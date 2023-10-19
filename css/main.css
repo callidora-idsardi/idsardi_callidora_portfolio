@@ -1,1 +1,18 @@
-/*# sourceMappingURL=main.css.map */
+.mobile-hidden {
+  display: none;
+}
+
+#flower-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-hidden {
+    display: block;
+  }
+  .tablet-hidden {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
