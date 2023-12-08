@@ -15,23 +15,64 @@
 
 <body>
     <h1 class="hidden">Callidora Idsardi's Portfolio</h1>
-    <header id="header" class="grid-con">
-        <div class="logo box col-start-1 col-end-3 m-col-start-1 m-col-end-4 ">Logo</div>
-        <nav class="nav box col-start-4 col-end-5 m-col-start-6 m-col-end-12"> Nav
-        </nav>
+    <header class="grid-con" id="main-header">
+        <div class="side-nav mobile-hidden">
+            <a href="#"><img src="images/icon-linkedin.svg" alt="Callidora Idsardi's Linkedin"></a>
+            <p>c_idsardi@fanshaweonline.ca</p>
+        </div>
+
+        <div class="col-start-1 l-col-start- l-col-end-13" id="menu">
+            <div id="burger-button">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="col-span-full l-col-start-4 burger-con" id="burger-con">
+                <h2 class="hidden">Main Navigation</h2>
+              <ul class="burger-menu">
+                <!-- <li><a href="index.html"><img class="desktop-logo" src="images/logo.svg" alt="Callidora Idsardi's Logo"> </a></li> -->
+                <li><a href="#">intro</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a id="resume" href="#">resume</a></li>
+            </ul>
+            </nav> 
+          </div>
+          <div class="burger-bg" id="burger-bg"></div>
+          <div class="col-start-4 m-col-start-12">
+            <img class="mobile-logo" src="images/hotspot.svg" alt="Crystal ClearBuds">
+          </div>
     </header>
+    
     <main>
-        <section class="hero-con grid-con">
-            <h2 class="hidden">Hello</h2>
-            <div class="box col-start-1 col-end-3 m-col-start-4 m-col-end-7">Hello</div>
-            <div class="box col-start-3 col-end-5 m-col-start-8 m-col-end-10">Cloud</div>
+        <section class="grid-con">
+            <h2 class="hidden">Welcome</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-12 hero-con">
+            <div id="hello-model">
+            <model-viewer alt="hello bubble letter" loading="eager" disable-zoom src="model/hello.gltf" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls poster="model/poster.webp" shadow-intensity="0" autoplay shadow-softness="0" exposure="1.22" tone-mapping="commerce"> </model-viewer>
+            </div>
+
+            <div>
+            <img id="rain-cloud"   
+            sizes="(max-width: 317px) 100vw, 317px"
+            srcset="
+            images/homepage-rain-cloud_c6ixya_c_scale,w_200.png 200w,
+            images/homepage-rain-cloud_c6ixya_c_scale,w_317.png 317w"
+            src="homepage-rain-cloud_c6ixya_c_scale,w_317.png"
+            alt="3D rain cloud">
+            </div>
+
+            </div>
         </section>
 
         <div class="grid-con" id="flower-con">
-            <div class=" box">Light Bulb</div>
-            <div class="box">Paint Brush</div>
-            <div class="box">Wireframe</div>
-            <div class="box">Code</div>
+            <div class="col-span-full" id="tulips">
+            <img src="images/homepage-hero-tulip-1.svg" alt="pink light bulb tulip">
+            <img src="images/homepage-hero-tulip-2.svg" alt="dark pink paint brush tulip">
+            <img src="images/homepage-hero-tulip-4.svg" alt="dark blue wireframe tulip">
+            <img src="images/homepage-hero-tulip-5.svg" alt="light blue code symbol tulip">
+            </div>
         </div>
         <div class="box" id="fence">Fence</div>
 
@@ -74,6 +115,7 @@
         </div>
         <nav class="nav box mobile-hidden m-col-start-6 m-col-end-12">Nav</nav>
     </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

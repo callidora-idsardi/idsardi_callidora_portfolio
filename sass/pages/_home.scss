@@ -1,18 +1,28 @@
 @use '../abstracts' as a;
 
 
-
-// General 
-.mobile-hidden {
-    display: none;
+body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, #84adffd1 100%);
 }
 
+//hero
 
-// Hero Con 
-
-#flower-con {
+.hero-con {
     @include a.flex-center;
 }
+
+
+//tulips 
+
+#tulips {
+    margin-bottom: 10px;
+    @include a.flex-center;
+    gap: 30px;
+    img {
+    width: 70px;
+    }
+}
+
 
 
 
@@ -20,19 +30,54 @@
 
 @media screen and (min-width: 768px) {
 
-    .mobile-hidden {
-        display: block;
+//hero
+
+.hero-con {
+    margin-top: 40px;
+    border-right: 2px solid a.$pink;
+    border-bottom: 2px solid a.$pink;
+}
+ 
+
+
+
+//tulips
+
+#tulips {
+    gap: 50px;
+
+  img {
+    width: auto;
+  }
+}
+
+}
+ 
+//Desktop Queries
+
+@media screen and (min-width: 1200px) {
+    .hero-con {
+        gap:80px;
     }
 
-    .tablet-hidden {
-        display: none;
-    }
+//tulips
+
+#tulips {
+    gap: 100px;
+
+}
+
+
+
+
+}
 
 
 
 
 
-
+//Large Desktop Queries
+@media screen and (min-width: 1920px) {
 
 
 }

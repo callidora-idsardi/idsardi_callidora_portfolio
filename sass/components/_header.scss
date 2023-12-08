@@ -1,1 +1,116 @@
 @use '../abstracts' as a;
+
+
+
+
+.mobile-logo {
+   width: 30px;
+   margin-left: 30px;
+   margin-top: 25px;
+   
+}
+
+.desktop-logo {
+   display: none;
+}
+
+
+
+.nav-con  {
+
+   ul {
+      padding: 0;
+   }
+
+   ul li a {
+      display: block;
+      text-align: center;
+      transition: all .4s ease;
+   }
+
+ }
+
+
+
+ .mobile-nav-icons {
+   margin-top: 20px;
+
+   width: 200px;
+
+   img {
+      transition: all .4s ease;
+   
+      &:hover {
+         opacity: 50%;
+      }
+   }
+
+ }
+
+
+/* Tablet Size */ 
+
+    @media screen and (min-width: 768px) {
+
+      .mobile-logo {
+         width: 30px;
+         margin-left: 0px;
+         margin-top: 25px;
+         
+      }
+
+      #sub-nav-con {
+         font-size: 1.6rem;
+      }
+
+ }
+
+
+@media screen and (min-width: 1200px) {
+
+   .mobile-logo {
+      display: none;
+   }
+
+   .mobile-nav-icons {
+      margin-top: 0;
+   }
+
+   .desktop-logo {
+      width: 2%;
+      display:inline;
+      margin-right: 50px;
+   }
+
+
+  #burger-con {
+   @include a.flex-center;
+   margin-top: 60px;
+   text-align: center;
+   background-color: #d2e8fe92;
+
+  ul li a {
+      display: inline;
+      padding: 10px;
+   }
+
+   ul li, &:first-child {
+      border: none;
+      display: inline;
+
+  }
+
+  }
+
+ 
+
+.burger-bg {
+   display: none;
+}
+
+#burger-button {
+   display: none;
+}
+
+
+}

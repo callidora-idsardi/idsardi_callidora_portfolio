@@ -1,10 +1,66 @@
 //Mixins
+//Mixins
 
-@mixin rotated($radius) {
-      -webkit-transform: rotate($radius);
-      -ms-transform: rotate($radius);
-      transform: rotate($radius);
+@mixin shine {
+      background: linear-gradient(to right, #ddd0ff,#f0ecfa, #ddd0ff);
+      background-size: 200%;
+  
+      &:hover {
+          background-position-x:100%;
+          opacity: 1;
+      }
 }
+
+@mixin box-shadow {
+      box-shadow: 9px 8px 10px -2px rgba(0,0,0,0.1);
+}
+
+@mixin background-blur {
+      backdrop-filter: saturate(100%) blur(50px);
+      background-color: rgba(249, 249, 249, 0.532);
+}
+
+
+//moving gradient 
+@mixin moving-gradient {
+      background: linear-gradient(20deg, #C4DAF2 20%, #ffffff 49%, #84AEFF 91%);
+      background-size: 200% 200%;
+      animation: gradient 20s ease infinite;
+
+      @keyframes gradient {
+            0% {
+                  background-position: 0% 100%;
+            }
+
+            50% {
+                  background-position: 100% 0%;
+            }
+
+            100% {
+                  background-position: 0% 100%;
+            }
+      }
+
+}
+
+@mixin draw {
+      stroke-width: 3px;
+      stroke-dasharray: 500;
+      animation: 5s draw;
+      animation-iteration-count: infinite;
+      width: 60px;
+      @keyframes draw{
+      0% {
+            stroke-dashoffset: 500; 
+      }
+      100% {
+            stroke-dashoffset: 0;
+      }
+      }
+}
+
+
+
 
 
 //flex box mixins
@@ -35,18 +91,3 @@
       justify-content: center;
 }
 
-//fonts
-
-// @mixin fontFace($font-family, $file-path) {
-//       @font-face {
-//             font: {
-//                   family: $font-family;
-//                   weight: normal;
-//                   style: normal;
-//             }
-
-//             //Modern Browsers
-//             src: url('#{$file-path}.woff') format('woff'),
-//             url('#{$file-path}.woff2') format('woff2')
-//       }
-// }
