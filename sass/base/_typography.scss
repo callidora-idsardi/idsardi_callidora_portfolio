@@ -1,1 +1,69 @@
 @use '../abstracts/variables' as v;
+
+html {
+    font-size: 62.5%;
+  }
+
+h2 {
+    font-size: 4.0rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h2, h3 {
+    color: v.$heading-text-color;
+    font-family: v.$heading-font-family;
+    font-weight: v.$heading-font-weight;
+    font-style: v.$heading-font-style;
+}
+
+
+p {
+    font-size: 2.0rem;
+    color:v.$body-text-color;
+    font-family: v.$body-font-family;
+    font-weight: v.$body-font-weight;
+    font-style: v.$body-font-style;
+}
+
+
+
+ul li a, ul, a {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 1.6rem;
+    list-style: none;
+    font-family: v.$body-font-family;
+    text-decoration: none;
+    color: v.$medium-blue;
+}
+
+ul li a {
+    transition: all .4s ease;
+
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    h2 {
+        font-size: 5.2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+}
+
