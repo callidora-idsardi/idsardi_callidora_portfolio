@@ -11,7 +11,7 @@ h3 {
 }
 
 h2, h3 {
-  color: #FFAAF5;
+  color: #5F96FE;
   font-family: "abril-fatface", serif;
   font-weight: 400;
   font-style: normal;
@@ -60,6 +60,13 @@ ul li a:hover {
 body {
   background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgba(132, 173, 255, 0.8196078431) 100%);
   margin-top: 10px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .mobile-logo {
