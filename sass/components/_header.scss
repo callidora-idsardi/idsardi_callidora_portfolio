@@ -4,8 +4,8 @@
 
 
 .mobile-logo {
-   width: 30px;
-   margin-left: 30px;
+   width: 80px;
+   margin-left: 20px;
    margin-top: 25px;
    
 }
@@ -52,13 +52,6 @@
 
     @media screen and (min-width: 768px) {
 
-      .mobile-logo {
-         width: 30px;
-         margin-left: 0px;
-         margin-top: 25px;
-         
-      }
-
       #sub-nav-con {
          font-size: 1.6rem;
       }
@@ -77,9 +70,11 @@
    }
 
    .desktop-logo {
-      width: 2%;
+      margin: 5px;
+      margin-right: 200px;
+      width: 50px;
       display:inline;
-      margin-right: 50px;
+      // margin-right: 300px;
    }
 
 
