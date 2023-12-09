@@ -31,9 +31,9 @@
                 <h2 class="hidden">Main Navigation</h2>
                 <a href="index.html"><img class="desktop-logo" src="images/logo.svg" alt="Callidora Idsardi's Logo"> </a>
               <ul class="burger-menu">
-                <li><a href="#">intro</a></li>
+                <li><a href="#introduction">intro</a></li>
                 <li><a href="#">projects</a></li>
-                <li><a href="#">about</a></li>
+                <li><a href="#about-me">about</a></li>
                 <li><a href="#">contact</a></li>
                 <li><a class="resume" href="#">resume</a></li>
                 </ul>
@@ -68,34 +68,38 @@
 
         <div class="grid-con" id="flower-con">
             <div class="col-span-full" id="tulips">
-            <img src="images/homepage-hero-tulip-1.svg" alt="pink light bulb tulip">
-            <img src="images/homepage-hero-tulip-2.svg" alt="dark pink paint brush tulip">
-            <img src="images/homepage-hero-tulip-4.svg" alt="dark blue wireframe tulip">
-            <img src="images/homepage-hero-tulip-5.svg" alt="light blue code symbol tulip">
+            <img class="flower" src="images/homepage-hero-tulip-1.svg" alt="pink light bulb tulip">
+            <img class="flower" src="images/homepage-hero-tulip-2.svg" alt="dark pink paint brush tulip">
+            <img class="flower" src="images/homepage-hero-tulip-4.svg" alt="dark blue wireframe tulip">
+            <img class="flower" src="images/homepage-hero-tulip-5.svg" alt="light blue code symbol tulip">
             </div>
+           
+        </div>
+
+        <div id="grid-con">
             <div id="fence" class="col-span-full">
-                <img
-                sizes="(max-width: 1920px) 100vw, 1920px"
-                srcset="
-                images/homepage_hero_fence_ppcrej_c_scale,w_200.png 200w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_605.png 605w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_896.png 896w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1108.png 1108w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1294.png 1294w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1468.png 1468w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1649.png 1649w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1796.png 1796w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1912.png 1912w,
-                images/homepage_hero_fence_ppcrej_c_scale,w_1920.png 1920w"
-                src="homepage_hero_fence_ppcrej_c_scale,w_1920.png"
-                alt="White fence">
+            <img
+            sizes="(max-width: 1920px) 100vw, 1920px"
+            srcset="
+            images/homepage_hero_fence_ppcrej_c_scale,w_200.png 200w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_605.png 605w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_896.png 896w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1108.png 1108w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1294.png 1294w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1468.png 1468w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1649.png 1649w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1796.png 1796w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1912.png 1912w,
+            images/homepage_hero_fence_ppcrej_c_scale,w_1920.png 1920w"
+            src="homepage_hero_fence_ppcrej_c_scale,w_1920.png"
+            alt="White fence">
             </div>
         </div>
 
 
         <div class="grid-con section-con">
-            <div id="intro" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
-            <section  class="section-theme">
+            <div id="introduction" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
+            <section  id="intro" class="section-theme">
                 <h2>nice to meet you!</h2>
                 <h3>Callidora Idsardi</h3>
                 <p>Front-end Web Developer & Designer</p>
@@ -238,10 +242,10 @@
          </div>
         <div class="mobile-hidden" id="footer-nav-list">
             <ul>
-                <li><a href="#">intro</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#intro">intro</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
                 <li><a class="resume" href="#">resume</a></li>
             </ul>
         </div>
@@ -250,6 +254,14 @@
 
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <!-- ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <!-- ScrollTo plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <script src="js/flower-bounce.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
 </body>
 
