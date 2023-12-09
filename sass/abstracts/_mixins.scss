@@ -23,7 +23,7 @@
 
 //moving gradient 
 @mixin moving-gradient {
-      background: linear-gradient(20deg, #C4DAF2 20%, #ffffff 49%, #84AEFF 91%);
+      background: linear-gradient(20deg, #84AEFF 20%, #C4DAF2 49%, #84AEFF 91%);
       background-size: 200% 200%;
       animation: gradient 20s ease infinite;
 
@@ -64,6 +64,12 @@
 
 
 //flex box mixins
+
+@mixin flex-start-center {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+}
 
 @mixin flex-column {
       display: flex;

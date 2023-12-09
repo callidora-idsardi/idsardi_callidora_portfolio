@@ -15,7 +15,7 @@
 
 <body>
     <h1 class="hidden">Callidora Idsardi's Portfolio</h1>
-    <header class="grid-con" id="main-header">
+    <header class="full-width-grid-con" id="main-header">
         <div class="side-nav mobile-hidden">
             <a href="#"><img src="images/icon-linkedin.svg" alt="Callidora Idsardi's Linkedin"></a>
             <p>c_idsardi@fanshaweonline.ca</p>
@@ -35,9 +35,9 @@
                 <li><a href="#">projects</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">contact</a></li>
-                <li><a id="resume" href="#">resume</a></li>
+                <li><a class="resume" href="#">resume</a></li>
                 </ul>
-            </nav> 
+            </nav>  
           </div>
           <div class="burger-bg" id="burger-bg"></div>
           <div class="col-start-4 m-col-start-12">
@@ -64,6 +64,7 @@
             </div>
             </div>
         </section>
+    
 
         <div class="grid-con" id="flower-con">
             <div class="col-span-full" id="tulips">
@@ -74,31 +75,34 @@
             </div>
             <div id="fence" class="col-span-full">
                 <img
-                    sizes="(max-width: 1332px) 100vw, 1332px"
-                    srcset="
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_200.png 200w,
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_585.png 585w,
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_828.png 828w,
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_1043.png 1043w,
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_1233.png 1233w,
-                    images/homepage-hero-fence_jqp3ou_c_scale,w_1332.png 1332w"
-                    src="homepage-hero-fence_jqp3ou_c_scale,w_1332.png"
-                    alt="White fence">
+                sizes="(max-width: 1920px) 100vw, 1920px"
+                srcset="
+                images/homepage_hero_fence_ppcrej_c_scale,w_200.png 200w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_605.png 605w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_896.png 896w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1108.png 1108w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1294.png 1294w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1468.png 1468w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1649.png 1649w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1796.png 1796w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1912.png 1912w,
+                images/homepage_hero_fence_ppcrej_c_scale,w_1920.png 1920w"
+                src="homepage_hero_fence_ppcrej_c_scale,w_1920.png"
+                alt="White fence">
             </div>
         </div>
-          
-        
 
 
-        <div class="grid-con" id="intro">
-            <section id="intro" class="col-span-full m-col-start-2 m-col-end-12">
+        <div class="grid-con section-con">
+            <section  class="section-theme col-span-full m-col-start-2 m-col-end-12">
                 <h2>nice to meet you!</h2>
                 <h3>Callidora Idsardi</h3>
                 <p>Front-end Web Developer & Designer</p>
-                <p>I specialize in developing & designing unique and functional
+                <p>I specialize in <span>developing & designing</span> unique and functional
                     websites, brand identities, and brand marketing materials with a 
                     strong focus on creativity! I enjoy making visions come to 
                     life & I'm excited for you to take a look through my portfolio!</p>
+                <img src="images/smile.png" alt="blue smile">
             </section>
         </div>
 
@@ -118,18 +122,25 @@
             </div>
         </div>
 
-        <div class="grid-con">
-            <section  id="about-me" class="col-span-full m-col-start-2 m-col-end-12">
+        <div id="about-me-con" class="grid-con section-con">
+            <section  id="about-me" class="section-theme col-span-full">
                 <h2>about me</h2>
 
-                <p>I am a second year <span>Interactive Media Design Student</span> at <span>Fanshawe College</span>. I've always enjoyed being creative and bringing unique ideas to life, while also solving problems and thinking logically at the same time. I love learning new things and growing as a person! 
+                <p>I am a second year <span>Interactive Media Design Student</span> at <span>Fanshawe College</span>. I've always enjoyed being creative and bringing unique ideas to life, while also finding enjoyment in solving problems at the same time. I really love watching a project develop conceptually all the way to final development. I love learning new things and growing as a person! 
                 </p>
 
-                <p>On my free time I love creative writing. I've been a writer my entire life and I'd love to write my own book one day. I also love cooking new recipes, hanging out with my dog, and playing cozy games!</p>
+                <h3>On my free time I enjoy:</h3>
+                    <ul>
+                    <li>psychology</li>
+                    <li>creative writing</li>
+                    <li>bullet journaling</li>
+                    <li>cozy games</li>
+                    </ul>
             </section>
 
-            <section class="col-span-full">
+            <section class="tool-con col-span-full">
                 <h2>Coding Tools</h2>
+            <div class="tools">
                 <section>
                 <img src="images/about-me-css3.svg" alt="CSS3 icon">
                 <h3>CSS3</h3>
@@ -144,7 +155,7 @@
                 </section>
                 <section>
                 <img src="images/about-me-responsive.svg" alt="Responsive Design icon">
-                <h3>Responsive Design</h3>
+                <h3>Responsive</h3>
                 </section>
                 <section>
                 <img src="images/about-me-sass.svg" alt="SASS icon">
@@ -154,10 +165,12 @@
                 <img src="images/about-me-github.svg" alt="Github icon">
                 <h3>Github</h3>
                 </section>
+            </div>
             </section>
 
-            <section class="col-span-full">
+            <section id="design-tools" class="tool-con col-span-full">
                 <h2>Design Tools</h2>
+            <div class="tools">
                 <section>
                 <img src="images/about-me-illustrator.svg" alt="Adobe Illustrator">
                 <h3>Illustrator</h3>
@@ -182,22 +195,33 @@
                 <img src="images/about-me-cinema4d.svg" alt="Cinema 4D">
                 <h3>Cinema 4D</h3>
                 </section>
+            </div>
             </section>
 
 
         </div>
-
-        <div class="grid-con" id="contact">
-            <div class="box col-span-full m-col-start-3 m-col-end-11">Contact</div>
-        </div>
     </main>
 
-    <footer class="grid-con" id="footer">
-        <div class="logo tablet-hidden box col-start-2 col-end-4 m-col-start-1 m-col-end-4 ">Social Media</div>
-        <div class="box col-start-2 col-end-4  m-col-start-1 m-col-end-4"> Logo
+    <footer class="full-width-grid-con">
+        <nav class="col-span-full footer-nav">
+          <h2 class="hidden">Main Footer Navigation</h2> 
+          <div class="social-links">
+          <a href="index.html"><img id="footer-logo" src="images/logo.svg" alt="Callidora Idsardi's Logo"></a>
+          <a href="#"><img src="images/icon-linkedin.svg" alt="Linkedin"></a>
+         </div>
+        <div class="mobile-hidden" id="footer-nav-list">
+            <ul>
+                <li><a href="#">intro</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a class="resume" href="#">resume</a></li>
+            </ul>
         </div>
-        <nav class="nav box mobile-hidden m-col-start-6 m-col-end-12">Nav</nav>
+        </nav>
     </footer>
+
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
