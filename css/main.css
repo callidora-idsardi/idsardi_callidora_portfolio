@@ -379,15 +379,28 @@ model-viewer::part(default-progress-bar) {
   object-fit: cover;
 }
 
-.section-con {
+#intro {
+  text-align: center;
   background-color: white;
+  box-shadow: 9px 8px 10px -2px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+  border-radius: 0;
+}
+#intro img {
+  margin-bottom: 20px;
+}
+
+#smile {
+  text-align: center;
+}
+
+.section-con {
   margin-top: 100px;
 }
 
 .section-theme {
   text-align: center;
   padding: 15px;
-  background-color: white;
 }
 .section-theme h2 {
   color: #FFAAF5;
@@ -410,11 +423,27 @@ model-viewer::part(default-progress-bar) {
 }
 
 #about-me {
+  background-color: white;
   text-align: left;
+  margin-top: 0;
 }
 #about-me h3 {
   font-weight: 700;
   margin-top: 15px;
+}
+
+#pink-cloud {
+  text-align: center;
+  margin: 50px;
+}
+#pink-cloud img {
+  width: 250px;
+}
+
+#blue-cloud {
+  text-align: center;
+  margin: 50px;
+  margin-top: 0;
 }
 
 #design-tools {
@@ -432,7 +461,7 @@ model-viewer::part(default-progress-bar) {
 }
 
 .tool-con {
-  margin-bottom: 10px;
+  background-color: white;
   text-align: center;
 }
 .tool-con h2 {
@@ -442,6 +471,10 @@ model-viewer::part(default-progress-bar) {
 .tool-con h3 {
   font-family: "korolev", sans-serif;
   margin-top: 10px;
+}
+
+#design-tools {
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -475,9 +508,49 @@ model-viewer::part(default-progress-bar) {
   #fence img {
     height: 400px;
   }
+  #intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .tools img {
+    margin-top: 10px;
+  }
+  #about-me {
+    box-shadow: 9px 8px 10px -2px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: white;
+    text-align: left;
+    margin-top: 0;
+  }
+  #about-me h3 {
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  #about-me p {
+    margin-right: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-con {
     gap: 80px;
+  }
+  #pink-cloud {
+    margin: 0;
+    position: relative;
+    top: 10em;
+    left: 5em;
+  }
+  #blue-cloud {
+    position: relative;
+    right: 50em;
+    bottom: 20em;
   }
 }/*# sourceMappingURL=main.css.map */
