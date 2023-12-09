@@ -5,6 +5,7 @@
  }
  
  #burger-button {
+  margin: 40px;
    width: 45px;
    height: 40px;
    cursor: pointer;
@@ -36,18 +37,13 @@
   
    display: none;
 
-   ul {
-      margin-top: 32px;
-      
-   }
-
    ul li a {
       font-size: 16px;
       margin-right: 10px;
    }
 
    ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    }
  }
 
@@ -63,7 +59,7 @@
    z-index: 1;
    width: 0;
    height: 0;
-   @include a.background-blur;
+   background-color: a.$light-blue;
    border-radius: 50%;
    transition: .6s ease;
  }
@@ -88,15 +84,15 @@
  
  .transform-bg {
    width: 420px;
-   height: 460px;
-   transform: translate(-40%,-30%);
+   height: 550px;
+   transform: translate(-40%,-25%);
  }
 
  @media screen and (min-width: 768px) {
 
   .burger-con {
   ul {
-    margin-top: 70px;
+    margin-top: 50px;
   }
   ul li {
     margin-bottom: 30px;

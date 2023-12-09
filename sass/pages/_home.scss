@@ -8,9 +8,7 @@
     margin-top: 0;
 }
 
-#rain-cloud {
-    margin-bottom: 200px;
-}
+
 
 //tulips 
 
@@ -34,11 +32,89 @@
 #fence {
     text-align: center;
     position: absolute;
-    top:10em;
+    top:6em;
 
     img {
-        height: 200px;
+        height: 310px;
         object-fit: cover;
+    }
+ }
+
+ //Intro 
+
+ .section-con {
+    background-color: white;
+    margin-top: 100px;
+ }
+ .section-theme {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+
+    h2 {
+        color: a.$pink;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+    h2, h3, p {
+        text-align: left;
+    }
+
+    h2, h3 {
+        font-family: a.$body-font-family;
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: a.$medium-blue;
+        font-weight: 700;
+    }
+
+    p {
+        margin-bottom: 20px;
+        
+    } 
+
+
+ }
+
+ #about-me {
+    text-align: left;
+
+    h3 {
+        font-weight: 700;
+        margin-top: 15px;
+    }
+ }
+
+
+ #design-tools {
+    margin-bottom: 100px;
+ }
+
+ .tools {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    img {
+        margin-top: 10px;
+    }
+ }
+
+ .tool-con {
+    margin-bottom: 10px;
+    text-align: center;
+    h2 {
+        margin: 40px;
+        font-family: a.$body-font-family;
+    }
+
+    h3 {
+        font-family: a.$body-font-family;
+        margin-top: 10px;
     }
  }
  
@@ -54,7 +130,10 @@
     border-bottom: 2px solid a.$pink;
 }
  
+#rain-cloud {
+    margin-bottom: 200px;
 
+}
 
 //tulips
 
@@ -73,6 +152,7 @@
 }
 
 
+
 #fence {
     left: 0; 
     right: 0; 
@@ -82,7 +162,13 @@
     object-fit: fill;
     text-align: center;
     position: absolute;
-    top:15em;
+    top:10em;
+
+    img {
+
+        height: 400px;
+       
+    }
  }
 
 }
