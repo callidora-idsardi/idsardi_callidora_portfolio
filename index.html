@@ -94,7 +94,8 @@
 
 
         <div class="grid-con section-con">
-            <section  class="section-theme col-span-full m-col-start-2 m-col-end-12">
+            <div id="intro" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
+            <section  class="section-theme">
                 <h2>nice to meet you!</h2>
                 <h3>Callidora Idsardi</h3>
                 <p>Front-end Web Developer & Designer</p>
@@ -102,8 +103,11 @@
                     websites, brand identities, and brand marketing materials with a 
                     strong focus on creativity! I enjoy making visions come to 
                     life & I'm excited for you to take a look through my portfolio!</p>
-                <img src="images/smile.png" alt="blue smile">
             </section>
+            </div>
+            <div id="smile" class="col-span-full m-col-start-9 m-col-end-12">
+                <img src="images/smile.png" alt="blue smile">
+            </div>
         </div>
 
         <div class="grid-con" id="project-gallery">
@@ -122,8 +126,21 @@
             </div>
         </div>
 
-        <div id="about-me-con" class="grid-con section-con">
-            <section  id="about-me" class="section-theme col-span-full">
+        <div class="grid-con">
+            <div id="pink-cloud" class="col-span-full l-col-start-9">
+                <img
+                sizes="(max-width: 381px) 100vw, 381px"
+                srcset="
+                images/homepage-aboutme-pink-cloud_hnnowf_c_scale,w_200.png 200w,
+                images/homepage-aboutme-pink-cloud_hnnowf_c_scale,w_381.png 381w"
+                src="homepage-aboutme-pink-cloud_hnnowf_c_scale,w_381.png"
+                alt="pink cloud">
+            </div>
+        </div>
+
+        <div id="about-me-con" class="grid-con">
+
+            <section  id="about-me" class="section-theme col-span-full m-col-start-2 m-col-end-12">
                 <h2>about me</h2>
 
                 <p>I am a second year <span>Interactive Media Design Student</span> at <span>Fanshawe College</span>. I've always enjoyed being creative and bringing unique ideas to life, while also finding enjoyment in solving problems at the same time. I really love watching a project develop conceptually all the way to final development. I love learning new things and growing as a person! 
@@ -138,7 +155,7 @@
                     </ul>
             </section>
 
-            <section class="tool-con col-span-full">
+            <section class="tool-con col-span-full m-col-start-2 m-col-end-12">
                 <h2>Coding Tools</h2>
             <div class="tools">
                 <section>
@@ -168,7 +185,7 @@
             </div>
             </section>
 
-            <section id="design-tools" class="tool-con col-span-full">
+            <section id="design-tools" class="tool-con col-span-full m-col-start-2 m-col-end-12">
                 <h2>Design Tools</h2>
             <div class="tools">
                 <section>
@@ -197,8 +214,18 @@
                 </section>
             </div>
             </section>
-
-
+        </div>
+        
+        <div class="grid-con">
+            <div id="blue-cloud" class="col-span-full">
+            <img
+            sizes="(max-width: 289px) 100vw, 289px"
+            srcset="
+            images/homepage-aboutme-blue-cloud_a0retl_c_scale,w_200.png 200w,
+            images/homepage-aboutme-blue-cloud_a0retl_c_scale,w_289.png 289w"
+            src="homepage-aboutme-blue-cloud_a0retl_c_scale,w_289.png"
+            alt="Blue cloud">
+            </div>
         </div>
     </main>
 
