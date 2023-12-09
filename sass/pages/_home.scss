@@ -19,23 +19,26 @@
     gap: 20px;
 
     img {
-    width: 80px;
+    width: 90px;
     }
 }
 
 
 #flower-con {
+    overflow: hidden;
     position: relative;
 }
 
 
 #fence {
+    top: 45em;
     text-align: center;
     position: absolute;
-    top:6em;
+
+  
 
     img {
-        height: 310px;
+        height: 410px;
         object-fit: cover;
     }
  }
@@ -43,10 +46,11 @@
  //Intro 
 
 #intro {
+    margin-top: 150px;
+    padding: 50px;
     text-align: center;
     background-color: white;
     @include a.box-shadow;
-    padding-bottom: 0;
     border-radius: 0;
 
     img {
@@ -59,9 +63,9 @@
 }
 
 
- .section-con {
-    margin-top: 100px;
- }
+//  .section-con {
+//     margin-top: 100px;
+//  }
  .section-theme {
     text-align: center;
     padding: 15px;
@@ -195,25 +199,14 @@
 
 
 #fence {
+    top: 60em;
     left: 0; 
     right: 0; 
     // margin-left: auto; 
     // margin-right: auto; 
     margin: auto;
     object-fit: fill;
-    text-align: center;
-    position: absolute;
-    top:10em;
-
-    img {
-
-        height: 400px;
-       
-    }
- }
-
- #intro {
-    @include a.flex-center;
+ 
  }
 
 
@@ -244,6 +237,10 @@
     p {
         margin-right: 100px;
     }
+ }
+
+ #intro {
+    padding: 50px;
  }
 
 
