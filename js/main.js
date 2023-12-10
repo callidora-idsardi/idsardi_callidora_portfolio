@@ -1,25 +1,15 @@
-
 (() => {
-    console.log("IIFE Fired");
-
-
-
-// Hamburger Menu Start
-console.log('js is wired!');
-
-    (function () {
-    let burgerButton = document.getElementById('burger-button');
-    let burgerCon = document.getElementById('burger-con');
-    let burgerBg = document.getElementById('burger-bg');
+    let burgerButton = document.querySelector('#burger-button');
+    let burgerCon = document.querySelector('#burger-con');
+    let burgerBg = document.querySelector('#burger-bg');
 
     function hamburgerMenu() {
-        burgerButton.classList.toggle('transform'); //transforms button on click 
-        burgerCon.classList.toggle('transform');    //transforms button information on click 
-        burgerBg.classList.toggle('transform-bg'); //transforms button container background on click 
+        burgerButton.classList.toggle('transform'); 
+        burgerCon.classList.toggle('transform');   
+        burgerBg.classList.toggle('transform-bg'); 
     }
 
     burgerButton.addEventListener('click', hamburgerMenu);
 })();
 
 
-})();

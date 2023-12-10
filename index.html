@@ -31,10 +31,11 @@
                 <h2 class="hidden">Main Navigation</h2>
                 <a href="index.html"><img class="desktop-logo" src="images/logo.svg" alt="Callidora Idsardi's Logo"> </a>
               <ul class="burger-menu">
-                <li><a href="#introduction">intro</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#about-me">about</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a class="scroll" href="#introduction">intro</a></li>
+                <li><a class="scroll" href="#">projects</a></li>
+                <li><a class="scroll" href="#about-me">about</a></li>
+                <li><a href="case_studies.html">case study</a></li>
+                <li><a href="contact.html">contact</a></li>
                 <li><a class="resume" href="#">resume</a></li>
                 </ul>
             </nav>  
@@ -100,7 +101,7 @@
         <div class="grid-con section-con">
             <div id="introduction" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
             <section  id="intro" class="section-theme">
-                <h2>nice to meet you!</h2>
+                <h2 class="text-change">nice to meet you!</h2>
                 <h3>Callidora Idsardi</h3>
                 <p>Front-end Web Developer & Designer</p>
                 <p>I specialize in <span>developing & designing</span> unique and functional
@@ -115,17 +116,19 @@
         </div>
 
         <div class="grid-con" id="project-gallery">
-            <div id="project-con" class="box col-span-full m-col-start-2 m-col-end-7">
-                <!-- Starting on basic functionality for project gallery 
-                Project images & information go here -->
+            <div id="project-con" class="col-span-full m-col-start-2 m-col-end-7">
+                <img src="images/squeezit-project.jpg" alt="Squeezit">
+                <p>Developed a website & whole new brand refresh for SQUEEZIT, a squeezable juice company made by General Mills and originally marketed in 1985.</p>
+                <a class="resume" href="https://github.com/callidora-idsardi/idsardi_callidora_fip/tree/main">more info</a>
             </div>
-            <div class="box col-span-full m-col-start-8 m-col-end-12">
+
+
+            <div id="link-con" class="col-span-full m-col-start-8 m-col-end-12">
                 <!-- Project 'buttons' go here -->
                 <ul>
                     <li class="project-link" data-team="squeezit">Squeezit</li>
-                    <li class="project-link" data-team="relaxify">Relaxify</li>
                     <li class="project-link" data-team="clearbuds">Crystal Clear Buds</li>
-                    <li class="project-link" data-team="wormcafe">Book Worm Cafe</li>
+                    <li class="project-link" data-team="seven">Seven</li>
                 </ul>
             </div>
         </div>
@@ -162,27 +165,27 @@
             <section class="tool-con col-span-full m-col-start-2 m-col-end-12">
                 <h2>Coding Tools</h2>
             <div class="tools">
-                <section>
-                <img src="images/about-me-css3.svg" alt="CSS3 icon">
+                <section class="stagger1">
+                <img class="" src="images/about-me-css3.svg" alt="CSS3 icon">
                 <h3>CSS3</h3>
                 </section>
-                <section>
+                <section class="stagger1">
                 <img src="images/about-me-html5.svg" alt="HTML5 icon">
                 <h3>HTML5</h3>
                 </section>
-                <section>
+                <section class="stagger1">
                 <img src="images/about-me-javascript.svg" alt="JavaScript icon">
                 <h3>JavaScript</h3>
                 </section>
-                <section>
+                <section class="stagger1">
                 <img src="images/about-me-responsive.svg" alt="Responsive Design icon">
                 <h3>Responsive</h3>
                 </section>
-                <section>
+                <section class="stagger1">
                 <img src="images/about-me-sass.svg" alt="SASS icon">
                 <h3>SASS</h3>
                 </section>
-                <section>
+                <section class="stagger1">
                 <img src="images/about-me-github.svg" alt="Github icon">
                 <h3>Github</h3>
                 </section>
@@ -192,27 +195,27 @@
             <section id="design-tools" class="tool-con col-span-full m-col-start-2 m-col-end-12">
                 <h2>Design Tools</h2>
             <div class="tools">
-                <section>
+                <section class="stagger2">
                 <img src="images/about-me-illustrator.svg" alt="Adobe Illustrator">
                 <h3>Illustrator</h3>
                 </section>
-                <section>
+                <section class="stagger2">
                 <img src="images/about-me-photoshop.svg" alt="Adobe Photoshop">
                 <h3>Photoshop</h3>
                 </section>
-                <section>
+                <section class="stagger2">
                 <img src="images/about-me-XD.svg" alt="Adobe XD">
                 <h3>Adobe XD</h3>
                 </section>
-                <section>
+                <section class="stagger2">
                 <img src="images/about-me-aftereffects.svg" alt="Adobe After Effects">
                 <h3>After Effects</h3>
                 </section>
-                <section>
+                <section class="stagger2"> 
                 <img src="images/about-me-premierepro.svg" alt="Adobe Premiere Pro">
                 <h3>Premiere Pro</h3>
                 </section>
-                <section>
+                <section class="stagger2">
                 <img src="images/about-me-cinema4d.svg" alt="Cinema 4D">
                 <h3>Cinema 4D</h3>
                 </section>
@@ -242,10 +245,11 @@
          </div>
         <div class="mobile-hidden" id="footer-nav-list">
             <ul>
-                <li><a href="#intro">intro</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a class="scroll" href="#intro">intro</a></li>
+                <li><a class="scroll" href="#projects">projects</a></li>
+                <li><a class="scroll" href="#about">about</a></li>
+                <li><a href="case_studies.html">case study</a></li>
+                <li><a href="contact.html">contact</a></li>
                 <li><a class="resume" href="#">resume</a></li>
             </ul>
         </div>
@@ -260,7 +264,11 @@
         <!-- ScrollTo plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
-    <script src="js/flower-bounce.js"></script>
+    <!-- text plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>
+
+    <script src="js/projects.js"></script>
+    <script src="js/greensock.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -3,7 +3,7 @@
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
 
-    const navLinks = document.querySelectorAll("#main-header nav ul li a");
+    const navLinks = document.querySelectorAll(".scroll");
 
     function scrollLink(e) {    
             e.preventDefault(); 

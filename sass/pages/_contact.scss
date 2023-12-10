@@ -1,0 +1,53 @@
+@use '../abstracts' as a;
+
+
+#contact-form {
+    border-radius: 90px;
+    height: 340px;
+    width: 340px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#contact-form form {
+        display: flex;
+        flex-direction: column;
+}
+
+
+#contact-form input, textarea {
+
+    background-color:a.$medium-blue;
+    border: none;
+    border-radius:  5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+    color: a.$light-blue;
+    height: 35px;
+    display: flex;
+    padding: 10px;
+}
+
+::placeholder { 
+    color: a.$dark-blue;
+}
+  
+
+#contact-form input[type="submit"]:hover {
+    background-color: a.$light-blue;
+    border-radius: 60px;
+}
+
+#contact-form form input[type="submit"] {
+   cursor: pointer;
+   width: 123px;
+   height: 37px;
+   border-radius: 34px;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(255, 255, 255, 0.272); 
+   transition: 1s;
+   margin: auto;
+   margin-top: 30px;
+}
