@@ -82,6 +82,11 @@
       justify-content: center;
 }
 
+@mixin flex-end {
+      display: flex;
+      align-items: end;
+}
+
 @mixin flex-center-column {
       @include flex-center;
       flex-direction: column;

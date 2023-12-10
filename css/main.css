@@ -40,6 +40,7 @@ ul li a, ul, a {
   font-size: 1.6rem;
   font-family: "korolev", sans-serif;
   text-decoration: none;
+  list-style: none;
   color: #84AEFF;
 }
 
@@ -72,10 +73,6 @@ li::marker {
 }
 .hidden {
   display: none;
-}
-
-body {
-  background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgba(132, 173, 255, 0.8196078431) 100%);
 }
 
 .mobile-logo {
@@ -223,7 +220,7 @@ body {
   margin-right: 10px;
 }
 .burger-con ul li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .burger-bg {
@@ -254,6 +251,12 @@ body {
   transform: translateY(-4px) rotateZ(20deg) scale(1, 1.5);
 }
 
+.case-header .transform-bg {
+  width: 520px;
+  height: 650px;
+  transform: translate(-40%, -25%);
+}
+
 .transform-bg {
   width: 420px;
   height: 550px;
@@ -262,10 +265,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .burger-con ul {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .burger-con ul li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .transform-bg {
     width: 720px;
@@ -338,6 +341,10 @@ model-viewer::part(default-progress-bar) {
     display: block;
   }
 }
+body {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgba(132, 173, 255, 0.8196078431) 100%);
+}
+
 .hero-con {
   display: flex;
   align-items: center;
@@ -467,7 +474,33 @@ model-viewer::part(default-progress-bar) {
   padding-bottom: 100px;
 }
 
+#project-con {
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: white;
+  margin-top: 150px;
+  text-align: center;
+}
+#project-con p {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#project-con a {
+  border: 1px solid #84AEFF;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+#link-con ul li {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
+  #link-con {
+    margin-top: 150px;
+  }
   .hero-con {
     margin-top: 40px;
     border-right: 2px solid #FFAAF5;
@@ -536,4 +569,155 @@ model-viewer::part(default-progress-bar) {
     right: 50em;
     bottom: 20em;
   }
+}
+#case-study {
+  background: #F9FCFF;
+}
+#case-study hr {
+  color: #FFAAF5;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#case-study span {
+  color: #84AEFF;
+  font-weight: 600;
+}
+#case-study h2 {
+  font-size: 2.6rem;
+  font-family: "korolev", sans-serif;
+  margin-bottom: 25px;
+}
+
+#project-desc {
+  display: flex;
+  align-items: end;
+  align-items: center;
+  border: 2px solid #84AEFF;
+  padding: 25px;
+  margin-bottom: 100px;
+}
+
+.flower-title {
+  display: flex;
+  align-items: end;
+}
+
+.step-desc {
+  text-align: center;
+}
+.step-desc p {
+  text-align: left;
+}
+
+.step-title {
+  text-align: center;
+}
+
+.last-img {
+  margin-left: auto;
+  padding: 50px;
+}
+
+#low-fi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#squeezit-header {
+  text-align: center;
+}
+#squeezit-header h2 {
+  margin: 40px;
+}
+
+#desc h2 {
+  font-size: 2.6rem;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+#desc p {
+  margin-bottom: 100px;
+}
+
+.case p {
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.case-img {
+  text-align: center;
+  margin: 50px;
+}
+.case-img img {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .step-title {
+    display: flex;
+    align-items: end;
+  }
+  .step-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .border {
+    border-right: 2px solid #84AEFF;
+    border-bottom: 2px solid #84AEFF;
+    padding: 10px;
+    padding-left: 5px;
+  }
+}
+#contact-form {
+  border-radius: 90px;
+  height: 340px;
+  width: 340px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form input, textarea {
+  background-color: #84AEFF;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin: 5px;
+  color: #D2E8FE;
+  height: 35px;
+  display: flex;
+  padding: 10px;
+}
+
+::placeholder {
+  color: #5F96FE;
+}
+
+#contact-form input[type=submit]:hover {
+  background-color: #D2E8FE;
+  border-radius: 60px;
+}
+
+#contact-form form input[type=submit] {
+  cursor: pointer;
+  width: 123px;
+  height: 37px;
+  border-radius: 34px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.272);
+  transition: 1s;
+  margin: auto;
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */

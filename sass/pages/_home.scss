@@ -1,5 +1,7 @@
 @use '../abstracts' as a;
-
+body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, #84adffd1 100%);
+}
 
 //hero
 
@@ -163,9 +165,41 @@
     padding-bottom: 100px;
  }
  
+
+
+ //Project Con 
+
+ #project-con {
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-top: 150px;
+    text-align: center;
+    p {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    a {
+        border: 1px solid a.$medium-blue;
+        padding: 10px;
+        border-radius: 30px;
+    }
+ }
+
+
+ #link-con {
+    ul li {
+        margin-top: 20px;
+    }
+ }
 // Tablet Queries
 
 @media screen and (min-width: 768px) {
+    #link-con {
+        margin-top: 150px;
+     }
 
 //hero
 

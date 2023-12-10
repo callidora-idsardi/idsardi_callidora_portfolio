@@ -43,7 +43,7 @@
    }
 
    ul li {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
    }
  }
 
@@ -82,6 +82,15 @@
  }
  
  
+ .case-header {
+  .transform-bg {
+    width: 520px;
+    height: 650px;
+    transform: translate(-40%,-25%);
+  }
+ 
+    
+ }
  .transform-bg {
    width: 420px;
    height: 550px;
@@ -92,10 +101,10 @@
 
   .burger-con {
   ul {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   ul li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
    }
   }
 
